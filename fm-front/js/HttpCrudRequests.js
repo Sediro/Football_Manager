@@ -1,4 +1,4 @@
-class HttpCrudRequests {
+export default class HttpCrudRequests {
     async get(url) {
         const res = await fetch(url)
         const data = await res.json()

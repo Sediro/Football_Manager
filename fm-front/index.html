@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<html>
+    <head>
+        <title>
+            Projet foot
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Prenom</label><label class="validation-error hide" id="fullNameValidationError">Vous êtes obligé de remplir le document.</label>
+                            <input type="text" name="Prenom" id="Prenom">
+                        </div>
+                        <div>
+                            <label>Nom</label>
+                            <input type="text" name="Nom" id="Nom">
+                        </div>
+                        <div>
+                            <label>Qualite</label>
+                            <input type="text" name="Qualite" id="Qualite">
+                        </div>
+                        <div>
+                            <label>Role</label>
+                            <input type="text" name="Role" id="Role">
+                        </div>
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Qualite</th>
+                                <th>Role</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="ServiceApi.js"></script>
+    </body>
+</html>
